@@ -14,6 +14,12 @@ var script = document.createElement('script');script.src = "https://code.jquery.
     }
 
     function runChatbot() {
+	
+	var link = document.createElement('link');
+	link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap';
+	link.rel = 'stylesheet';
+	document.head.appendChild(link);
+	
         // Inject CSS
         var css = `
         #chat-bot-body {    
@@ -140,14 +146,15 @@ var script = document.createElement('script');script.src = "https://code.jquery.
         font-size:12px;
         }
         .chat-logs {
-        display: flex;
-        flex-direction: column-reverse;
-        padding:15px 15px 0px 15px; 
-        height:100%;
-        word-wrap: break-word;
-        overflow-y: auto;
-        font-size:13px;
-        box-sizing: border-box;
+	display: flex;
+	flex-direction: column-reverse;
+	padding:15px 15px 0px 15px; 
+	height:100%;
+	word-wrap: break-word;
+	overflow-y: auto;
+	font-size:13px;
+	box-sizing: border-box;
+	background: var(--Base-White, #FFF);
         }
         
         .chat-logs::-webkit-scrollbar-track
@@ -671,7 +678,7 @@ var script = document.createElement('script');script.src = "https://code.jquery.
               </div>
               <div class="chat-actions-area">
                   <div class="help-section">
-                      <a href="#" id="chat-human-help" class="chat-action-link">Chci pomoci od člověka</a>
+                      <a href="https://www.aktion.cz/vyrobce/kontakt.html" id="chat-human-help" class="chat-action-link">Chci pomoci od člověka</a>
                   </div>
                   <!--<img src="path_to_extra_icon.png" alt="Icon" class="chat-action-icon">-->
                   <button id="chat-send-button" aria-label="Odeslat">Odeslat</button>
@@ -846,11 +853,7 @@ $(document).ready(function() {
   }
   
   function urlify(text) {
-    var urlRegex = /(?:\[(https?:\/\/[^\s]+)\])|(https?:\/\/[^\s]+)/g;
-    return text.replace(urlRegex, function(_, url1, url2) {
-        var url = url1 || url2;
-        return '<a href="' + url + '">' + url + '</a>';
-    });
+    return text;
   }
   
   function renderMessage(message, type) {
