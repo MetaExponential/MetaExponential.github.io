@@ -510,7 +510,7 @@ var script = document.createElement('script');script.src = "https://code.jquery.
         }
     
         #chat-human-help {
-            color: var(--Primary-700, #6941C6);
+            color: #4C7727;
     
             /* Text sm/Medium */
             font-family: Inter;
