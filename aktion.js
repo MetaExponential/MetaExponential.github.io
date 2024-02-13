@@ -503,7 +503,7 @@ var script = document.createElement('script');script.src = "https://code.jquery.
             gap: 8px;
             border-radius: 8px;
             border: 1px solid var(--Primary-50, #F9F5FF);
-            background: var(--Primary-50, #F9F5FF);
+            background: #F0F0F0;
     
             /* Shadow/xs */
             box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
@@ -535,7 +535,7 @@ var script = document.createElement('script');script.src = "https://code.jquery.
             gap: 8px;
             border-radius: 8px;
             border: 1px solid var(--Primary-600, #7F56D9);
-            background: var(--Primary-600, #7F56D9);
+            background: #4C7727;
             color: var(--Base-White, #FFF);
     
             /* Text sm/Medium */
@@ -546,9 +546,6 @@ var script = document.createElement('script');script.src = "https://code.jquery.
             line-height: 20px; /* 142.857% */
         }
     
-        #chat-send-button:hover {
-            background-color: #6A3D85; /* Slightly darker shade for hover */
-        }
     
         /* Additional responsive adjustments as needed */
         @media (max-width: 600px) {
