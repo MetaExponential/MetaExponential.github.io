@@ -793,7 +793,7 @@ $(document).ready(function() {
     scrollToTheBottom();
 
     $.ajax({
-      url: 'http://127.0.0.1:5000/api',
+      url: 'https://metaexponential.eu.pythonanywhere.com/api',
       method: 'POST',
       contentType: 'application/json',
       data: JSON.stringify({
