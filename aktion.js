@@ -81,7 +81,7 @@ var script = document.createElement('script');script.src = "https://code.jquery.
             align-items: flex-start;
             flex-shrink: 0;
             border-radius: 24px 24px 0px 0px;
-            background: linear-gradient(to right, #fd5bfb, #313082);
+            background: #4C7727;
             padding-top: 20px;
         }
     
@@ -409,7 +409,7 @@ var script = document.createElement('script');script.src = "https://code.jquery.
     }
     
     .user-message-content {
-      background: #7B4B94; /* Purple background */
+      background: #4C7727;
       color: white; /* White text color */
       border-radius: 8px;
       padding: 10px;
