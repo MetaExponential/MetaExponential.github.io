@@ -382,6 +382,10 @@ var script = document.createElement('script');script.src = "https://code.jquery.
             min-height: 13px;
             display: flex;
             align-items: center;
+	  word-wrap: break-word;
+	  word-break: break-all;
+	}
+
         }
     
         .message-content p {
@@ -415,6 +419,10 @@ var script = document.createElement('script');script.src = "https://code.jquery.
       padding: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds some shadow for depth */
       font-family: Inter;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
     }
     
     
