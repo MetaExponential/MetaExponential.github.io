@@ -4,29 +4,27 @@
     padding: 100px 100px 0px 100px;
     align-items: center;
     flex-direction: column;
+    max-width: 100%;
 }
 
 .title {
     color: var(--Midnight-Blue, #181453);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Poppins;
-    font-size: 54px;
     font-style: normal;
     font-weight: 700;
-    line-height: 66px; /* 122.222% */
+    font-size: 6vw; /* Uses viewport width to scale font size */
+    line-height: 1.2; /* Improves readability */
     padding: 15px 0px;
 }
 
 .subtitle {
     width: 770px;
     color: #181453;
-    text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Poppins;
-    font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 38px; /* 158.333% */
     padding-bottom: 30px;
 }
 
@@ -35,21 +33,24 @@
     color: #181453;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Poppins;
-    font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 38px; /* 190% */
 }
 
 .item {
     color: var(--Midnight-Blue, #181453);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Poppins;
-    font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 38px;
     padding-top: 5px;
+}
+
+.subtitle, .instructions, .item {
+    text-align: center; /* Centers text for better readability */
+    font-size: 4.5vw; /* Scales font size based on viewport width */
+    line-height: 1.5; /* Improves readability */
+    padding-bottom: 30px;
 }
 
 .metaLogoWrapper{
@@ -64,6 +65,12 @@
     fill: linear-gradient(250deg, #9A5DFD 4.84%, #FD5DFB 76.44%);
 }
 
+.metaLogo svg {
+    width: 80vw; /* Scales SVG based on viewport width */
+    max-width: 250px; /* Ensures the SVG doesn't exceed its natural width */
+    height: auto; /* Keeps the aspect ratio of the SVG */
+}
+
 .metaNameWrapper {
     display: flex;
     flex-direction: column;
@@ -74,7 +81,7 @@
     color: var(--Midnight-Blue, #181453);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Poppins;
-    font-size: 105px;
+    font-size: 9vw;
     font-style: normal;
     font-weight: 700;
     width: 100%;
@@ -86,7 +93,7 @@
     color: var(--Midnight-Blue, #181453);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Poppins;
-    font-size: 44px;
+    font-size: 7vw;
     font-style: normal;
     width: 100%;
     display: flex;
@@ -96,33 +103,22 @@
 }
 
 
-/* Media Queries for smaller screens, typically for devices with width less than 768px */
-@media screen and (max-width: 768px) {
+/* Adjustments for very small screens, typically for devices with width less than 480px */
+@media screen and (max-width: 480px) {
     .bodyWrapper {
-        padding: 50px 20px; /* Reduced padding */
+        padding: 50px 10px; /* Reduced padding for very small screens */
     }
     .title {
-        font-size: 36px; /* Reduced font size */
-        line-height: 1.2; /* Adjusted line height for better readability */
+        font-size: 32px; /* Fixes font size to maintain readability */
     }
     .subtitle, .instructions, .item {
-        font-size: 18px; /* Slightly smaller font size */
-        line-height: 1.5; /* Improved line spacing */
+        font-size: 18px; /* Fixes font size to maintain readability */
     }
-    .meta {
-        font-size: 60px; /* Reduced logo text size */
-    }
-    .exponential {
-        font-size: 30px; /* Adjusted for smaller screens */
-    }
-}
-
-/* Additional adjustments for very small screens, typically for devices with width less than 480px */
-@media screen and (max-width: 480px) {
-    .meta {
-        font-size: 48px; /* Further reduced font size for very small screens */
+    .meta, .exponential {
+        font-size: 60px; /* Fixes logo text size for consistency */
+        letter-spacing: normal; /* Adjusts letter spacing if needed */
     }
     .exponential {
-        font-size: 24px; /* Further adjustment for readability */
+        font-size: 30px; /* Adjusts smaller text for the 'Exponential' part */
     }
 }
