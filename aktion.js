@@ -424,20 +424,7 @@ var script = document.createElement('script');script.src = "https://code.jquery.
 }
 
     }
-    
-    
-        /* .user-message-container {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-        }
-    
-        .user-message-header,
-        .user-message-content {
-          align-self: flex-end;
-          width: fit-content;
-          max-width: 100%;
-        } */
+
     
         .user-sender-name {
             font-weight: bold;
@@ -555,15 +542,18 @@ var script = document.createElement('script');script.src = "https://code.jquery.
         }
     
     
-        /* Additional responsive adjustments as needed */
-        @media (max-width: 600px) {
-            .chat-footer {
-                padding: 16px 8px; /* Adjust padding for smaller screens */
-            }
-            #chat-input {
-                padding: 16px 16px; /* Adjust padding for smaller screens */
-            }
-        }
+	    @media (max-width: 768px) {
+	        .chat-footer {
+	            padding: 16px 8px; /* Adjust padding for smaller screens */
+	        }
+	        #chat-input {
+	            padding: 16px 16px; /* Adjust padding for smaller screens */
+	        }
+	        .chat-box-body{
+	          height: 240px;
+	        }
+	    }
+
     
         .chat-box-header-avatar-icon {
             width: 91px;
