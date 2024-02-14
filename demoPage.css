@@ -66,9 +66,13 @@
 }
 
 .metaLogo svg {
-    width: 80vw; /* Scales SVG based on viewport width */
+    width: 60vw; /* Scales SVG based on viewport width */
     max-width: 250px; /* Ensures the SVG doesn't exceed its natural width */
     height: auto; /* Keeps the aspect ratio of the SVG */
+}
+
+.title, .subtitle, .instructions, .item {
+    text-align: center;
 }
 
 .metaNameWrapper {
@@ -103,22 +107,34 @@
 }
 
 
-/* Adjustments for very small screens, typically for devices with width less than 480px */
-@media screen and (max-width: 480px) {
-    .bodyWrapper {
-        padding: 50px 10px; /* Reduced padding for very small screens */
-    }
+/* Media Queries */
+@media screen and (max-width: 768px) {
     .title {
-        font-size: 32px; /* Fixes font size to maintain readability */
+        font-size: 7vw;
     }
     .subtitle, .instructions, .item {
-        font-size: 18px; /* Fixes font size to maintain readability */
+        font-size: 3.5vw;
     }
-    .meta, .exponential {
-        font-size: 60px; /* Fixes logo text size for consistency */
-        letter-spacing: normal; /* Adjusts letter spacing if needed */
+    .meta {
+        font-size: 10vw;
     }
     .exponential {
-        font-size: 30px; /* Adjusts smaller text for the 'Exponential' part */
+        font-size: 5vw;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 6vw;
+    }
+    .subtitle, .instructions, .item {
+        font-size: 3vw;
+    }
+    .meta {
+        font-size: 12vw;
+    }
+    .exponential {
+        font-size: 6vw;
+    }
+}
+
