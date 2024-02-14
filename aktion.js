@@ -843,7 +843,7 @@ $(document).ready(function() {
 		if(textStatus === 'timeout') {
           error_message('Request timeout! Požadavek se zpracovával příliš dlouho. Zkuste to prosím ještě jednou.');
         }
-        var errorMessageElement = $('<div class="chat-friend"><div class="icon"><i class="material-icons"><b>Chatbot</b></i></div><div class="chat-message">' + error_message + '</div></div>');
+        const errorMessageElement = createMessageElement(error_message, 'Chatbot');
         prependMessage(errorMessageElement);
       }
     });
