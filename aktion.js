@@ -865,7 +865,7 @@ $(document).ready(function() {
   }
 
   function greetUser(shouldTypeMessage) {
-    const greeting = "Dobrý den, jsem asistenční robot poháněný umělou inteligencí. Rád vám odpovím na jakoukoliv otázku týkající se společnosti Meta Exponential. Ptejte se...";
+    const greeting = "Dobrý den, jsem asistentka poháněná umělou inteligencí. Ráda vám odpovím na jakoukoliv otázku týkající se společnosti Aktion. Ptejte se...";
     const messageElement = createMessageElement(greeting, 'Chatbot');
     $('.chat-logs').prepend(messageElement);
     // if (shouldTypeMessage) {
