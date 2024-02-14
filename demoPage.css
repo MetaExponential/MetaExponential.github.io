@@ -1,78 +1,41 @@
-.bodyWrapper {
-    display: flex;
-    justify-content: center;
-    padding: 100px 100px 0px 100px;
-    align-items: center;
-    flex-direction: column;
-    max-width: 100%;
-}
-
-.title {
-    color: var(--Midnight-Blue, #181453);
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Poppins;
-    font-style: normal;
+.meta {
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 6vw; /* Uses viewport width to scale font size */
-    line-height: 1.2; /* Improves readability */
-    padding: 15px 0px;
-}
-
-.subtitle {
-    width: 770px;
-    color: #181453;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 400;
-    padding-bottom: 30px;
-}
-
-.instructions {
-    width: 828px;
-    color: #181453;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 400;
+    font-size: 3rem;
+    letter-spacing: 5px;
 }
 
 .item {
-    color: var(--Midnight-Blue, #181453);
-    font-feature-settings: 'clig' off, 'liga' off;
+    text-align: left;
     font-family: Poppins;
-    font-style: normal;
-    font-weight: 400;
-    padding-top: 5px;
 }
 
-.subtitle, .instructions, .item {
-    text-align: center; /* Centers text for better readability */
-    font-size: 4.5vw; /* Scales font size based on viewport width */
-    line-height: 1.5; /* Improves readability */
-    padding-bottom: 30px;
+.exponential {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem;
+    letter-spacing: 3px;
 }
+
+.subtitle {
+    font-size: 24px;
+}
+
+.metaLogo svg {
+    width: 100%;
+    height: auto;
+}
+
 
 .metaLogoWrapper{
     width: auto;
     flex-shrink: 0;
     display: flex;
-    padding: 30px 0px;
+    padding: 20px 0px;
     justify-content: space-between;
 }
 
 .metaLogo {
     fill: linear-gradient(250deg, #9A5DFD 4.84%, #FD5DFB 76.44%);
-}
-
-.metaLogo svg {
-    width: 60vw; /* Scales SVG based on viewport width */
-    max-width: 250px; /* Ensures the SVG doesn't exceed its natural width */
-    height: auto; /* Keeps the aspect ratio of the SVG */
-}
-
-.title, .subtitle, .instructions, .item {
-    text-align: center;
 }
 
 .metaNameWrapper {
@@ -85,7 +48,7 @@
     color: var(--Midnight-Blue, #181453);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Poppins;
-    font-size: 9vw;
+    font-size: 105px;
     font-style: normal;
     font-weight: 700;
     width: 100%;
@@ -97,7 +60,7 @@
     color: var(--Midnight-Blue, #181453);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Poppins;
-    font-size: 7vw;
+    font-size: 44px;
     font-style: normal;
     width: 100%;
     display: flex;
@@ -106,35 +69,17 @@
     letter-spacing: 3px;
 }
 
+@media (max-width: 768px) {
 
-/* Media Queries */
-@media screen and (max-width: 768px) {
-    .title {
-        font-size: 7vw;
-    }
-    .subtitle, .instructions, .item {
-        font-size: 3.5vw;
-    }
-    .meta {
-        font-size: 10vw;
-    }
-    .exponential {
-        font-size: 5vw;
+
+    .metaLogoWrapper{
+        width: auto;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .title {
-        font-size: 6vw;
-    }
-    .subtitle, .instructions, .item {
-        font-size: 3vw;
-    }
-    .meta {
-        font-size: 12vw;
-    }
-    .exponential {
-        font-size: 6vw;
-    }
-}
+@media (max-width: 576px) {
 
+}
