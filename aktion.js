@@ -702,7 +702,7 @@ $(document).ready(function() {
 
   const chatLogs = $('.chat-logs');
   const chatInput = $('#chat-input');
-  const chatSubmit = $('#chat-submit');
+  const chatSubmit = $('#chat-send-button');
 
   if (SHOW_BOT) {
     $("#chat-bot-body").css("visibility", "visible");
