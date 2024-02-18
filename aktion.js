@@ -952,7 +952,7 @@ $(document).ready(function() {
     scrollToTheBottom();
 
     $.ajax({
-      url: 'http://127.0.0.1:5000/api',
+      url: 'https://MetaExponential.eu.pythonanywhere.com/api',
       method: 'POST',
       contentType: 'application/json',
       data: JSON.stringify({
@@ -1208,7 +1208,7 @@ $(document).ready(function() {
       'phone_number': getPhoneNumber()
     }
     $.ajax({
-      url: 'http://127.0.0.1:5000/help_request',
+      url: 'https://MetaExponential.eu.pythonanywhere.com/help_request',
       method: 'POST',
       contentType: 'application/json',
       data: JSON.stringify({
