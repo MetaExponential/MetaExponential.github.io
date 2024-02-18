@@ -620,7 +620,7 @@ var script = document.createElement('script');script.src = "https://code.jquery.
             background: #EDFCF2;
           }
       
-          label[for="phone-number"], label[for="email"] { {
+          label[for="phone-number"], label[for="email"] {
             color: var(--Gray-700, #344054);
             font-family: Inter;
             font-size: 17px;
