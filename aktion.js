@@ -472,7 +472,6 @@ var script = document.createElement('script');script.src = "https://code.jquery.
               align-items: center;
               justify-content: space-between;
               width: 100%;
-              margin-top: 8px;
           }
       
           .action-button {
@@ -658,7 +657,10 @@ var script = document.createElement('script');script.src = "https://code.jquery.
             line-height: 20px;
             padding-left: 10px;
           }
-    
+
+      .chat-footer input {
+	      margin-bottom: 8px;
+	    }
         
           `;
         var style = document.createElement('style');
