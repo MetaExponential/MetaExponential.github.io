@@ -997,7 +997,7 @@ $(document).ready(function() {
           const response = JSON.parse(jqXHR.responseText);
           error_message = response.message;
         }
-		    if(textStatus === 'timeout') {
+    if(textStatus === 'timeout') {
           error_message('Request timeout! Požadavek se zpracovával příliš dlouho. Zkuste to prosím ještě jednou.');
         }
         const errorMessageElement = createMessageElement(error_message, 'Chatbot');
@@ -1233,7 +1233,7 @@ $(document).ready(function() {
 		    if(textStatus === 'timeout') {
           error_message = 'Request timeout! Požadavek se zpracovával příliš dlouho. Zkuste to prosím ještě jednou.';
         }
-        $('#request-send-success').text(error_message);
+        // $('#request-send-success').text(error_message);
       }
     });
   }
