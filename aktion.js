@@ -661,6 +661,10 @@ var script = document.createElement('script');script.src = "https://code.jquery.
       .chat-footer input {
 	      margin-bottom: 8px;
 	    }
+
+     #back-to-chat {
+      margin-top: 8px;
+    }
         
           `;
         var style = document.createElement('style');
