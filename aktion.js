@@ -791,7 +791,7 @@ var script = document.createElement('script');script.src = "https://code.jquery.
           div.style.position = 'fixed';  // Set position to fixed
           div.style.bottom = '0';  // Position at the bottom of the window
           div.style.right = '0';  // Position at the right of the window
-          div.style.zIndex = '999';
+          div.style.zIndex = '999999999';
           document.body.appendChild(div);
 
           // Run JavaScript
