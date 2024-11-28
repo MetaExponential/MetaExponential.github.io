@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Aktion</title>
+    <!-- Linking the CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="demoPage.css">
+</head>
+<body>
+    <div class="bodyWrapper">
+        <div class="metaLogoWrapper">
+            <div class="metaLogo">
+                <img src="logo_squarer.png">
+            </div>
+        </div>
+        <div class="subtitle">To test the demo chatbot, open the chatbox using the chatbot icon in the bottom right corner</div>
+        <ol class="instructions">
+            <li class="item">
+                The chatbot should provide meaningful responses to your questions
+            </li>
+            <li class="item">
+                Report any issues to info@metaexponential.com
+            </li>
+        </ol>
+    </div>
+</body>
+<footer>
+    <script>
+        window.chatbotConfig = {
+            "apiKey": "021a78aa-6a70-43b0-9eaa-6c6056c4dc05",
+            "domain": "https://solvechat.ai"
+        }
+    </script>
+    <script src="https://solvechat.ai/assets/chatbot.js" defer>
+    </script>
+</footer>
+</html>
